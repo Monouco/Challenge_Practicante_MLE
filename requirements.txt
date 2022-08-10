@@ -1,5 +1,4 @@
 fastapi==0.75.2
 lightgbm
-pickle
 scikit-learn
 uvicorn==0.17.6
