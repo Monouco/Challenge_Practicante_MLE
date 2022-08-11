@@ -8,3 +8,4 @@ def probEnfermedadCardiaca(request, pipe):
     prob = pipe.predict_proba(inputData)[:,1]
     prob = {"prob": round(prob.item(), 4)} 
     return prob
+    

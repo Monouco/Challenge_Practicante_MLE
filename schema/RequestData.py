@@ -13,3 +13,4 @@ class RequestData(BaseModel):
     exerciseAngina: str
     oldpeak:        float
     sTSlope:        str
+    
