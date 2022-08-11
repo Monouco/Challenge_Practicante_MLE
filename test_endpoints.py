@@ -9,4 +9,4 @@ def test_post_prob_enfermedad_cardiaca():
         data = json.load(file)
     
     response = client.post("/probEnfermedadCardiaca", json=data)
-    assert response.status_code == 500
+    assert response.status_code == 200
