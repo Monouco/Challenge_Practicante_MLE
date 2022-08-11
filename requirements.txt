@@ -1,5 +1,6 @@
 fastapi==0.75.2
 lightgbm
 pytest
+requests
 scikit-learn
 uvicorn==0.17.6
