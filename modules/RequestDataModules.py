@@ -7,5 +7,4 @@ def probEnfermedadCardiaca(request, pipe):
     #prediciendo la probabilidad
     prob = pipe.predict_proba(inputData)[:,1]
     prob = {"prob": round(prob.item(), 4)} 
-    #return prob
-    return {"prob" : "Hallo"}
+    return prob
