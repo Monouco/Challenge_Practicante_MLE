@@ -15,13 +15,11 @@
 * En el archivo `Procfile` esta la instrucción `web: gunicorn -w 4 -k uvicorn.workers.UvicornWorker main:app` que permite que el servicio pueda desplegarse en HEROKU.
 * Finalmente, en la sección de **Manual deploy** desplegar la rama correspondiente a donde se esta trabajando. Esto solo es necesario la primera vez, ya que despues será deployado automáticamente por cómo se configuró anteriormente.
 #### APPS en HEROKU
-Se puede llamar a los servicios deployados:
-* Staging: http://challenge-rimac-mle-dev.herokuapp.com/probEnfermedadCardiaca
+Se puede llamar a los servicios desplegados:
 * Production: http://challenge-rimac-mle.herokuapp.com/probEnfermedadCardiaca
 
 ## Instrucciones de uso
-Realizar un **Post** request a la dirección URL `http://{IP_instancia}:8000/probEnfermedadCardiaca`, donde se tiene que colocar el ip pública de la instancia donde se deployó el servicio o `127.0.0.1` si se trabaja de maner local. O directamente a las siguientes URLs:
-* Staging: http://challenge-rimac-mle-dev.herokuapp.com/probEnfermedadCardiaca
+Realizar un **Post** request a la dirección URL `http://{IP_instancia}:8000/probEnfermedadCardiaca`, donde se tiene que colocar el ip pública de la instancia donde se deployó el servicio o `127.0.0.1` si se trabaja de maner local. O directamente a la siguiente URL:
 * Production: http://challenge-rimac-mle.herokuapp.com/probEnfermedadCardiaca
 
 ### Input
