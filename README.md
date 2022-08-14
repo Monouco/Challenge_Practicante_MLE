@@ -17,7 +17,7 @@
 #### APPS en HEROKU
 Se puede llamar a los servicios desplegados:
 * Production: http://challenge-rimac-mle.herokuapp.com/probEnfermedadCardiaca
-* Cabe resaltar que HEROKU suspende la aplicación despues de un determinado tiempo, por lo que puede que el servicio no este habilidado. Por eso, se adjunta en la carpeta de *Pruebas* unas imagenes del funcionamiento del servicio.
+* Cabe resaltar que HEROKU suspende la aplicación despues de un determinado tiempo, por lo que puede que el servicio no este habilidado. Por eso, se adjunta en la carpeta de **Pruebas** unas imagenes del funcionamiento del servicio.
 
 ## Instrucciones de uso
 Realizar un **Post** request a la dirección URL `http://{IP_instancia}:8000/probEnfermedadCardiaca`, donde se tiene que colocar la ip pública de la instancia donde se deployó el servicio o `127.0.0.1` si se trabaja de maner local. O directamente a la siguiente URL:
