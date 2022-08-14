@@ -5,7 +5,7 @@
 * Primero, clonar el repositorio o descargarlo y ubicarlo en la instancia que se encargará de ejecutar el servicio
 * Segundo, asegurarse de contar con las librerias requeridas para ejecutar el servicio. Estas se encuentran en el archivo **requirements.txt** y para instalarlas utilizar el comando `pip install -r requirements.txt`
 * Tercero, abrir una consola de comandos en la carpeta principal del proyecto y ejecutar el comando `uvicorn main:app`
-* Finalmente, el servicio estará habilitado y para utilizarlo, llamar a la URL `http://127.0.0.1:8000/probEnfermedadCardiaca` si se trabaja de manera local o `http://{IP_instancia}:8000/probEnfermedadCardiaca` donde se tiene que colocar el ip pública de la instancia donde se deployó el servicio.
+* Finalmente, el servicio estará habilitado y para utilizarlo, llamar a la URL `http://127.0.0.1:8000/probEnfermedadCardiaca` si se trabaja de manera local o `http://{IP_instancia}:8000/probEnfermedadCardiaca` donde se tiene que colocar la ip pública de la instancia donde se deployó el servicio.
 
 ### Para el despliegue en HEROKU
 * Crear una aplicación y agregarla a un pipeline en staging o production
@@ -17,9 +17,10 @@
 #### APPS en HEROKU
 Se puede llamar a los servicios desplegados:
 * Production: http://challenge-rimac-mle.herokuapp.com/probEnfermedadCardiaca
+* Cabe resaltar que HEROKU suspende la aplicación despues de un determinado tiempo, por lo que puede que el servicio no este habilidado. Por eso, se adjunta en la carpeta de **Pruebas** unas imagenes del funcionamiento del servicio.
 
 ## Instrucciones de uso
-Realizar un **Post** request a la dirección URL `http://{IP_instancia}:8000/probEnfermedadCardiaca`, donde se tiene que colocar el ip pública de la instancia donde se deployó el servicio o `127.0.0.1` si se trabaja de maner local. O directamente a la siguiente URL:
+Realizar un **Post** request a la dirección URL `http://{IP_instancia}:8000/probEnfermedadCardiaca`, donde se tiene que colocar la ip pública de la instancia donde se deployó el servicio o `127.0.0.1` si se trabaja de maner local. O directamente a la siguiente URL:
 * Production: http://challenge-rimac-mle.herokuapp.com/probEnfermedadCardiaca
 
 ### Input
